@@ -11,6 +11,5 @@ public interface IPolicyService {
     Collection<Policy> getAllPolicies();
     
     boolean updatePolicy(Policy policy);
-    
-    boolean deletePolicy(int policyId);
+
 }
