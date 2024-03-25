@@ -1,5 +1,16 @@
 package com.Dao;
 
-public class IPolicyService {
+import com.Entity.Policy;
+import java.util.Collection;
 
+public interface IPolicyService {
+    boolean createPolicy(Policy policy);
+    
+    Policy getPolicy(int policyId);
+    
+    Collection<Policy> getAllPolicies();
+    
+    boolean updatePolicy(Policy policy);
+    
+    boolean deletePolicy(int policyId);
 }
